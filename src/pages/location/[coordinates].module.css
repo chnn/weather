@@ -1,0 +1,26 @@
+.page {
+  padding: 40px;
+  height: 100%;
+}
+
+.chart {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.chartAxis {
+  stroke: #bbb;
+  shape-rendering: crispEdges;
+  stroke-width: 1;
+}
+
+.chartTick {
+  stroke: #eee;
+  shape-rendering: crispEdges;
+  stroke-width: 1;
+}
+
+.xTickLabel {
+  text-anchor: middle;
+  font-weight: normal;
+}

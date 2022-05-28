@@ -1,8 +1,14 @@
-import type { NextPage } from 'next'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Link from "next/link";
 
-const Home: NextPage = () => {
-  return null
-}
+const HomePage: NextPage = () => {
+  return (
+    <ul>
+      <li>
+        <Link href="/location/okx">Weather at OKX</Link>
+      </li>
+    </ul>
+  );
+};
 
-export default Home
+export default HomePage;
