@@ -1,0 +1,14 @@
+- [x] better label placement
+- [x] window sizing
+- [x] time axis
+- [ ] sunrise / sunset
+- [ ] responsiveness
+- [ ] next 4 hours forecast
+- [ ] hover state
+- [ ] more time series
+  - [ ] cloud cover
+  - [ ] precipitation
+  - [ ] uv index
+  - [ ] wind w/ direction and gust
+- [ ] locations
+- [ ] pwa
