@@ -45,23 +45,25 @@ const LocationPage: NextPage = () => {
   const weatherQuery = useQuery("weather", getWeather);
 
   // TODO: UV Index, Wind, Precipitation, Cloud Cover
-  return weatherQuery.data ? (
+  return (
     <div className={styles.page}>
-      <AutoSizer>
-        {({ width }) => (
-          <>
-            <h2 className={styles.header}>Temperature and dew point</h2>
-            <Chart
-              width={width}
-              height={400}
-              tss={Object.values(weatherQuery.data.tss)}
-            />
-          </>
-        )}
-      </AutoSizer>
+      <h2 className={styles.header}>Temperature & Dew Point</h2>
+      {weatherQuery.data ? (
+        <div className={styles.chartContainer}>
+          <AutoSizer>
+            {({ width }) => (
+              <Chart
+                width={width}
+                height={400}
+                tss={Object.values(weatherQuery.data.tss)}
+              />
+            )}
+          </AutoSizer>
+        </div>
+      ) : (
+        "Loading..."
+      )}
     </div>
-  ) : (
-    <div>"Loading..."</div>
   );
 };
 

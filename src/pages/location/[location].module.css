@@ -4,10 +4,15 @@
 }
 
 .header {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
-  text-transform: uppercase;
   padding-left: 20px;
+}
+
+.chartContainer {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 @media (min-width: 1000px) {
